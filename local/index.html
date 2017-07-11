@@ -3,27 +3,91 @@
 <html lang="ja">
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title></title>
+	<script type="text/javascript" src="js/cmd.js"></script>
 	</head>
 	  <table border="0" cellspacing="0" cellpadding="5">
+
 		  <tr>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx/light/on"><input type=submit value="電灯→Full"></form>
-</th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx/light/off"><input type=submit value="電灯→Off"></form></th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx/light/fav"><input type=submit value="電灯→程々"></form></th>
+			  <th>
+				  <form name="go-to-office">
+					  <input type=button value="出社" onclick="syusya()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="welcome-back">
+					  <input type=button value="帰宅" onclick="kitaku()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="sleep">
+					  <input type=button value="就寝" onclick="syuusin()">
+				  </form>
+			  </th>
 		  </tr>
 		  <tr>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx/air/jositu"><input type=submit value="エアコン（除湿）"></form>
-</th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./air/reibo"><input type=submit value="エアコン（冷房）"></form></th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./air/off"><input type=submit value="エアコン（オフ）"></form></th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./air/timer-on"><input type=submit value="エアコン（タイマーオン）"></form></th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./air/timer-off"><input type=submit value="エアコン（タイマーオフ）"></form></th>
+			  <th>
+				  <form name="light-on">
+					  <input type=button value="電灯(Full)" onclick="lightOn()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="light-off">
+					  <input type=button value="電灯(Off)" onclick="lightOff()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="light-fav">
+					  <input type=button value="電灯(程々)" onclick="lightFav()">
+				  </form>
+			  </th>
+		  </tr>
+
+		  <tr>
+			  <th>
+				  <form name="air-jositu">
+					  <input type=button value="エアコン（除湿）" onclick="airJositu()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="air-reibo">
+					  <input type=button value="エアコン（冷房）" onclick="airReibo()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="air-off">
+					  <input type=button value="エアコン（オフ）" onclick="airOff()">
+				  </form>
+			  </th>
 		  </tr>
 		  <tr>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./senpu/on"><input type=submit value="扇風機（オン）"></form>
-</th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./senpu/off"><input type=submit value="扇風機（オフ）"></form></th>
-			  <th><form method="GET" action="http://xxx.xxx.xxx.xxx./senpu/timer"><input type=submit value="扇風機（オフタイマー）"></form></th>
+			  <th>
+				  <form name="air-timer-on">
+					  <input type=button value="エアコン（タイマーオン）" onclick="airTimerOn()">
+				  </form>
+			  </th>
+			  <th></th>
+			  <th>
+				  <form name="air-timer-off">
+					  <input type=button value="エアコン（タイマーオフ）" onclick="airTimerOff()">
+				  </form>
+			  </th>
+		  </tr>
+
+		  <tr>
+			  <th>
+				  <form name="senpuu-on">
+					  <input type=button value="扇風機（オン）" onclick="senpuuOn()">
+				  </form>
+			  </th>
+			  <th>
+				  <form name="senpuu-off">
+					  <input type=button value="扇風機（オフ）" onclick="senpuuOff()">
+				  </form></th>
+			  <th>
+				  <form name="senpuu-timer">
+					  <input type=button value="扇風機（オフタイマー）" onclick="senpuuTimer()">
+				  </form>
+			  </th>
 		  </tr>
 	  </table>
 </html>
